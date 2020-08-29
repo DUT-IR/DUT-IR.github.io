@@ -1,3 +1,15 @@
+<head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
 ## 中文幽默计算
 
 ### 1. 任务介绍
@@ -57,7 +69,7 @@
 | 验证集  | 1000 | 1000 |
 | 测试集 | 3000    | 3000 |
 
-两个任务的数据以及baseline请通过GitHub目录下载：https://github.com/DUT-IR/DUT-IR.github.io
+两个任务的数据以及baseline请通过GitHub目录下载：[https://github.com/DUT-IR/DUT-IR.github.io](https://github.com/DUT-IR/DUT-IR.github.io)
 
 ### 3. 评价方式
 
@@ -65,11 +77,14 @@
 
 该子任务是二分类任务，标签有：生成幽默（label=0）、非生成幽默（label=1）。任务采用F1值进行评价，具体公式如下，其中P、R分别代表准确率（Precision）和召回率（Recall）：
 
-![img](img/recall_img.jpg)
+$ F_1=\frac{2*P*R}{P+R} $
 
 * **子任务二：中文幽默等级划分**
 
 该子任务是三分类任务，标签有：弱幽默（label=1）、普通幽默（label=3）、强幽默（label=5）。任务采用宏平均（Macro-Average）进行评价。宏平均首先对每一个类统计评价指标值，然后对所有类的指标值求算术平均，具体公式如下：
 
-![task2.png](img/task2.png)
+$ Macro_F=\frac{1}{n}\sum_{i=1}^{n}{F_i} $
+
+$ F_i = \frac{2*P_i*R_i}{P_i+R_i} $
+
 
