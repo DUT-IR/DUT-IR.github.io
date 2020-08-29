@@ -131,4 +131,4 @@ csv文件分隔符使用逗号“,”，每行结尾的换行符为“\n”，�
 
 * 6. 算法与系统的知识产权归参赛队伍所有，要求最终结果排名前3的队伍提供算法代码与系统报告（包括方法说明、数据处理、参考文献和使用开源工具等信息），供会议交流。
 
-* 7. 本评测联系人：任璐（renlu@mail.dlut.edu.cn），耿源羚（gengyuanling@mail.dlut.edu.cn）。
+* 7. 本评测联系人：任璐（<renlu@mail.dlut.edu.cn>），耿源羚（<gengyuanling@mail.dlut.edu.cn>）。
