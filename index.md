@@ -8,6 +8,12 @@
             }
         });
     </script>
+    <style>
+		table {
+		margin: auto;
+		border: 1px solid red
+		}
+	</style>
 </head>
 
 ## 中文幽默计算
