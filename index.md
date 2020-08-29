@@ -77,7 +77,7 @@
 
 该子任务是二分类任务，标签有：生成幽默（label=0）、非生成幽默（label=1）。任务采用F1值进行评价，具体公式如下，其中P、R分别代表准确率（Precision）和召回率（Recall）：
 
-$ F_1=\frac{2*P*R}{P+R} $
+$ F_1=\frac{2 * P * R}{P + R} $
 
 * **子任务二：中文幽默等级划分**
 
@@ -85,6 +85,6 @@ $ F_1=\frac{2*P*R}{P+R} $
 
 $ Macro_F=\frac{1}{n}\sum_{i=1}^{n}{F_i} $
 
-$ F_i = \frac{2*P_i*R_i}{P_i+R_i} $
+$ F_i = \frac{2 * P_i * R_i}{P_i + R_i} $
 
 
