@@ -77,14 +77,14 @@
 
 该子任务是二分类任务，标签有：生成幽默（label=0）、非生成幽默（label=1）。任务采用F1值进行评价，具体公式如下，其中P、R分别代表准确率（Precision）和召回率（Recall）：
 
-$ F_1=\frac{2 * P * R}{P + R} $
+$$ F_1=\frac{2 * P * R}{P + R} \tag{3.1} $$
 
 * **子任务二：中文幽默等级划分**
 
 该子任务是三分类任务，标签有：弱幽默（label=1）、普通幽默（label=3）、强幽默（label=5）。任务采用宏平均（Macro-Average）进行评价。宏平均首先对每一个类统计评价指标值，然后对所有类的指标值求算术平均，具体公式如下：
 
-$ Macro_F=\frac{1}{n}\sum_{i=1}^{n}{F_i} $
+$$ Macro_F=\frac{1}{n}\sum_{i=1}^{n}{F_i} \tag{3.2} $$
 
-$ F_i = \frac{2 * P_i * R_i}{P_i + R_i} $
+$$ F_i = \frac{2 * P_i * R_i}{P_i + R_i} \tag{3.3} $$
 
 
